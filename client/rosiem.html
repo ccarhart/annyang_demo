@@ -1,0 +1,25 @@
+<head>
+  <title>rosiem</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/1.4.0/annyang.min.js"></script>
+  
+</head>
+<body>
+  <h1>Testing annyang speech recognition</h1>
+
+  <p>Only works in Chrome</p>
+  <p>1) Click Setup to configure the service</p>
+  <p>2) Click Start to listen for "Rosie" and "Set Date". You will be prompted to enable microphone. </p>
+  <p>If the system hears either trigger, it puts up an alert. There is a long lag. It will keep listening after it recognizes a trigger. This behaviour is configurable.</p>
+
+  <p>The JS is so small because it is just a simple way to call webkit SpeechRecognizer</p>
+
+  <div>
+    {{> control}}
+  </div>
+
+</body>
+
+<template name="control">
+  <button class='setup'>Setup annyang</button>
+  <button class='start-listening'>Click to listen</button>
+</template>

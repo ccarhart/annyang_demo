@@ -1,0 +1,14 @@
+/* CSS declarations go here */
+body {
+  font-family: sans-serif;
+}
+
+button {
+  background-color: blue;
+  color: white;
+}
+
+.entry-area {
+  margin-left: 30px;
+  margin-top: 15px;
+}
